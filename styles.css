@@ -180,8 +180,8 @@ p { margin: 0; }
 .feature h3 { margin-top: 10px; font-size: clamp(30px, 3.6vw, 46px); line-height: 0.98; text-transform: uppercase; }
 .feature p { margin-top: 18px; color: var(--muted); max-width: 30em; }
 .feature ul { margin: 22px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
-.feature li { display: flex; gap: 12px; align-items: baseline; font-size: 16px; }
-.feature li::before { content: ""; width: 8px; height: 8px; background: var(--primary-deep); flex-shrink: 0; transform: translateY(-1px); }
+.feature li { position: relative; padding-left: 20px; font-size: 16px; }
+.feature li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 8px; height: 8px; background: var(--primary-deep); }
 .feature.social li::before { background: var(--atlantic); }
 .feature li strong { font-weight: 600; color: var(--text); }
 
