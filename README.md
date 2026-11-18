@@ -18,9 +18,9 @@ Each phone frame shows a placeholder until its screenshot exists. Add a PNG (129
 |---|---|
 | `assets/screens/home.png` | The hero |
 | `assets/screens/parks.png` | 01 Every park in the country |
-| `assets/screens/session.png` | 02 Plan a session |
+| `assets/screens/session.png` | 02 Plan the session |
 | `assets/screens/skating.png` | 03 See who's skating |
-| `assets/screens/tricks.png` | 04 Track your tricks |
+| `assets/screens/tricks.png` | 04 Build your trick lists |
 
 Use a test account. Screenshots must not show real people's names or photos.
 

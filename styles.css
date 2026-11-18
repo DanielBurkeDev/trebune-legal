@@ -183,6 +183,7 @@ p { margin: 0; }
 .feature li { display: flex; gap: 12px; align-items: baseline; font-size: 16px; }
 .feature li::before { content: ""; width: 8px; height: 8px; background: var(--primary-deep); flex-shrink: 0; transform: translateY(-1px); }
 .feature.social li::before { background: var(--atlantic); }
+.feature li strong { font-weight: 600; color: var(--text); }
 
 /* Weather panel: the app's three real states. */
 .weather { display: grid; gap: 10px; max-width: 380px; margin: 0 auto; width: 100%; }
