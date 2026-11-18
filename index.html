@@ -1,49 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IE">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trebune — Legal</title>
-<meta name="description" content="Privacy Policy and Terms of Service for the Trebune app.">
+<title>Trebune: the Irish skateboarding app</title>
+<meta name="description" content="Every skatepark in Ireland on one map, street spots, sessions with your mates, trick lists, and a straight answer on whether it's a skate day.">
+<meta name="theme-color" content="#131313">
+<link rel="canonical" href="https://trebune.ie/">
 <link rel="icon" type="image/png" href="logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#1C1C1C; --surface:#242424; --surface-high:#2E2E2E;
-    --text:#EDEDED; --muted:#A8A8A8;
-    --primary:#ffb68a; --accent:#E06D06; --teal:#8FB3B5;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;border-radius:0 !important;}
-  body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.65;font-size:16px;
-       min-height:100vh;display:flex;align-items:center;justify-content:center;}
-  .wrap{max-width:560px;padding:40px 20px;width:100%;}
-  .logo{width:44px;height:44px;display:block;margin-bottom:16px;}
-  .brand{font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--primary);font-size:15px;letter-spacing:.08em;text-transform:uppercase;}
-  h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:32px;margin:10px 0 8px;}
-  p{color:var(--muted);margin-bottom:28px;}
-  a.card{display:block;background:var(--surface);padding:18px 22px;margin:12px 0;text-decoration:none;color:var(--text);
-         border-left:3px solid var(--accent);}
-  a.card:hover{background:var(--surface-high);}
-  a.card .title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:var(--primary);}
-  a.card .sub{font-size:14px;color:var(--muted);margin-top:2px;}
-</style>
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Trebune">
+<meta property="og:title" content="Trebune: the Irish skateboarding app">
+<meta property="og:description" content="Find the park. Find the crew. Find the dry patch.">
+<meta property="og:url" content="https://trebune.ie/">
+<meta property="og:image" content="https://trebune.ie/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IE">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-<div class="wrap">
-  <img class="logo" src="logo.png" alt="Trebune logo">
-  <div class="brand">Trebune</div>
-  <h1>Legal</h1>
-  <p>Discover Irish skateparks, spots, shops and sessions.</p>
-  <a class="card" href="privacy.html">
-    <div class="title">Privacy Policy</div>
-    <div class="sub">What data the app collects, why, and your rights.</div>
-  </a>
-  <a class="card" href="terms.html">
-    <div class="title">Terms of Service</div>
-    <div class="sub">The rules of using Trebune.</div>
-  </a>
-</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Trebune home">
+      <img src="logo.png" alt="" width="30" height="30">
+      <span>Trebune</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#community">Discord</a>
+      <a class="btn btn-sm" href="#get">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="label">The Irish skateboarding app</p>
+      <h1>Find the park.<br>Find the crew.<br><em>Find the dry patch.</em></h1>
+      <p class="lede">Every skatepark in Ireland on one map, route planning for sessions with your mates, trick lists with combo lines, and a straight answer on whether it's a skate day.</p>
+      <div class="stores">
+        <a class="store" aria-disabled="true"><span><small>Coming soon</small><b>App Store</b></span></a>
+        <a class="store" aria-disabled="true"><span><small>Coming soon</small><b>Google Play</b></span></a>
+      </div>
+    </div>
+    <div class="phone tilt">
+      <div class="slot" aria-hidden="true"><img class="mark" src="logo.png" alt=""><span class="word">Skate<br>Ireland<br>right.</span></div>
+      <img src="assets/screens/home.png" alt="The Trebune home screen" onerror="this.remove()">
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What's in it</h2>
+      <p>Local skate-shop knowledge for the whole country, in your pocket.</p>
+    </div>
+
+    <article class="feature">
+      <div>
+        <span class="num">01</span>
+        <h3>Every park in the country</h3>
+        <p>Every skatepark in Ireland on one map. See what other skaters rate it and what's trending this week before you get the bus.</p>
+        <ul>
+          <li>Search and filter by county and what's there</li>
+          <li>Star ratings from other skaters</li>
+          <li>Street spots and skate shops on the same map</li>
+        </ul>
+      </div>
+      <div class="feature-media">
+        <div class="phone">
+          <div class="slot" aria-hidden="true"><span class="num">01</span><span class="word">Every<br>park</span></div>
+          <img src="assets/screens/parks.png" alt="A skatepark on the Trebune map" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+    </article>
+
+    <article class="feature">
+      <div>
+        <span class="num">02</span>
+        <h3>Plan the session</h3>
+        <p>Head out now, or plan a route for the weekend. Pick up to ten parks and spots, set what time you'll hit each one, and invite your mates.</p>
+        <ul>
+          <li><strong>Route planner:</strong> stops in order, with arrival times</li>
+          <li><strong>Preview the route</strong> to any park on the map</li>
+          <li>Invite friends and see who's joining</li>
+          <li>Check in at each stop as you go</li>
+        </ul>
+      </div>
+      <div class="feature-media">
+        <div class="phone">
+          <div class="slot" aria-hidden="true"><span class="num">02</span><span class="word">Plan<br>the sesh</span></div>
+          <img src="assets/screens/session.png" alt="Planning a session in Trebune" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+    </article>
+
+    <article class="feature social">
+      <div>
+        <span class="num">03</span>
+        <h3>See who's skating</h3>
+        <p>Check in when you get there and see who else is about. Your feed shows where your friends have been skating.</p>
+        <ul>
+          <li>Live check-ins at parks, spots, shops and events</li>
+          <li>A feed of where your friends skate</li>
+          <li>You choose who sees your sessions</li>
+        </ul>
+      </div>
+      <div class="feature-media">
+        <div class="phone">
+          <div class="slot" aria-hidden="true"><span class="num">03</span><span class="word">Who's<br>here</span></div>
+          <img src="assets/screens/skating.png" alt="Who's skating at a park in Trebune" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+    </article>
+
+    <article class="feature">
+      <div>
+        <span class="num">04</span>
+        <h3>Build your trick lists</h3>
+        <p>Make your own lists of what you're learning and what you've landed. Put tricks together into combo lines, and link them to the spot where you're working on them.</p>
+        <ul>
+          <li><strong>Your own lists:</strong> as many as you want, with progress</li>
+          <li><strong>Combo lines:</strong> chain tricks into a line</li>
+          <li>Set priorities for what to learn next</li>
+          <li>Tricks for each park or spot</li>
+        </ul>
+      </div>
+      <div class="feature-media">
+        <div class="phone">
+          <div class="slot" aria-hidden="true"><span class="num">04</span><span class="word">Land<br>it</span></div>
+          <img src="assets/screens/tricks.png" alt="A trick list in Trebune" loading="lazy" onerror="this.remove()">
+        </div>
+      </div>
+    </article>
+
+    <article class="feature social">
+      <div>
+        <span class="num">05</span>
+        <h3>Know if it's a skate day</h3>
+        <p>The forecast where you are, in skater terms. In Ireland, that's half the battle.</p>
+      </div>
+      <div class="feature-media">
+        <div class="weather" aria-label="The three weather states the app shows">
+          <div class="wx send"><div><div class="temp">17°C</div><div class="where">Light wind, sun out</div></div><span class="chip">SEND IT</span></div>
+          <div class="wx dry"><div><div class="temp">12°C</div><div class="where">Grey but dry</div></div><span class="chip">DRY TODAY</span></div>
+          <div class="wx rain"><div><div class="temp">9°C</div><div class="where">Showers from 2pm</div></div><span class="chip">RAIN EXPECTED</span></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="also">
+      <span class="label">Also in the app</span>
+      <span class="tag">Skate shops</span>
+      <span class="tag">Events</span>
+      <span class="tag">Favourites</span>
+      <span class="tag">Parks you've visited</span>
+      <span class="tag">Friends</span>
+    </div>
+  </div>
+</section>
+
+<section class="community" id="community">
+  <div class="wrap">
+    <div>
+      <p class="label">Community</p>
+      <h2>Join the Discord</h2>
+      <p>Talk spots, find people to skate with, and tell us what to build next.</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-atlantic" href="https://discord.gg/uGkWzAYa5p" target="_blank" rel="noopener">Join on Discord →</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="get">
+  <div class="wrap">
+    <h2>Get out <em>and skate.</em></h2>
+    <p>Trebune is coming to the App Store and Google Play. Join the Discord to hear first when it lands.</p>
+    <div class="stores">
+      <a class="store" aria-disabled="true"><span><small>Coming soon</small><b>App Store</b></span></a>
+      <a class="store" aria-disabled="true"><span><small>Coming soon</small><b>Google Play</b></span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="logo.png" alt="" width="30" height="30"><span>Trebune</span></a>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="https://discord.gg/uGkWzAYa5p" target="_blank" rel="noopener">Discord</a>
+      <a href="mailto:privacy@trebune.ie">privacy@trebune.ie</a>
+    </nav>
+    <p class="fine">© 2026 Trebune. Made in Ireland. No cookies, no tracking.</p>
+  </div>
+</footer>
+
 </body>
 </html>
