@@ -48,8 +48,12 @@
   <img class="logo" src="logo.png" alt="Trebune logo">
   <div class="brand"><a href="index.html">Trebune</a></div>
   <h1>Privacy Policy</h1>
-  <p class="effective">Effective date: 13 November 2026</p>
+  <p class="effective">Effective date: 18 November 2026</p>
 </header>
+
+<div class="callout">
+  <p><strong>What changed on 18 November 2026:</strong> Added how Sign in with Apple works, how we count views to show what's trending, and more detail on the weather lookup. Removed a mention of share messages, which the app doesn't have. Nothing new is collected.</p>
+</div>
 
 <p>Trebune is an app for discovering Irish skateparks, street spots, shops and events, and for planning skate sessions with friends. This policy explains what personal data the app collects, why, and what your rights are. It is written to be read by humans — if anything is unclear, email us.</p>
 
@@ -63,6 +67,7 @@
 <ul>
   <li><strong>Email address, username and password</strong> when you create an account. Passwords are handled by our authentication provider (Clerk) and are never visible to us.</li>
   <li>If you sign in with <strong>Google</strong>, we receive your Google account email, name and profile picture from Google.</li>
+  <li>If you sign in with <strong>Apple</strong>, we receive your name (the first time only) and your email address from Apple. If you choose to hide your email, Apple gives us a private relay address that forwards to you, and we never see your real address.</li>
   <li>An optional <strong>profile photo (avatar)</strong> if you choose to upload one.</li>
 </ul>
 
@@ -70,7 +75,7 @@
 <ul>
   <li><strong>Check-ins</strong> at skateparks, spots and shops.</li>
   <li><strong>Favourites, star ratings and likes.</strong></li>
-  <li><strong>Skate sessions</strong> you plan: session name, scheduled time, the venues on your route, notes, and any message you attach when sharing a session with a friend.</li>
+  <li><strong>Skate sessions</strong> you plan: session name, scheduled time, the venues on your route and notes. When you share a session, spot, event or trick list with a friend, we store who shared what with whom.</li>
   <li><strong>Friend connections</strong> (requests you send and accept) and <strong>trick lists</strong> you create or share.</li>
   <li><strong>Reports and blocks:</strong> when you report something, we store who made the report, the reason, any details you add, and a copy of the reported content as it was at that moment. We also store the list of users you've blocked.</li>
 </ul>
@@ -79,8 +84,11 @@
 <div class="callout">
   <p><strong>Your location is never stored on our servers.</strong></p>
   <p>If you grant permission, the app reads your approximate location, on-device and only while you're using the app, to: sort spots by distance ("Near Me"), preview a route to a venue, and show local weather. We request balanced (not highest-precision) accuracy and never access location in the background.</p>
-  <p>The one case where coordinates leave your device: to fetch a weather forecast, your approximate latitude/longitude is sent to the weather services <strong>Met Éireann</strong> and <strong>Open-Meteo</strong>. These requests are not tied to your account.</p>
+  <p>The only times your location leaves your device are for the weather forecast. To work out your county, the app uses your phone's built-in place lookup (Apple on iPhone, Google on Android), which may send your location to them. The app then sends your county to <strong>Met Éireann</strong>. If that doesn't work, it sends your approximate latitude/longitude, rounded to about 10 km, to <strong>Open-Meteo</strong>. These requests are not tied to your account.</p>
 </div>
+
+<h3>Views</h3>
+<p>When you open a skatepark, spot, shop or event, we count <strong>one view per person per item per day</strong>, to show what's trending. To do that we store a one-way code (a hash) made from the date and your account ID, or from your IP address and app details (user agent) if you're not signed in. We don't store your IP address itself, and the code isn't saved on your profile. These records are deleted automatically after <strong>60 days</strong>.</p>
 
 <h3>Crash and performance data</h3>
 <p>If the app crashes or misbehaves, a technical report (stack trace, device model, OS version, app version) is sent to <strong>Sentry</strong>, hosted in the <strong>EU</strong>. We have configured Sentry so that it does <strong>not</strong> receive your IP address, email or device identifiers, and crash reports are not linked to your account.</p>
@@ -96,7 +104,7 @@
 <ul>
   <li><strong>To provide the service</strong> (GDPR Art. 6(1)(b) — contract): your account, favourites, check-ins, sessions, friends and everything else you'd expect the app to do.</li>
   <li><strong>With your consent</strong> (Art. 6(1)(a)): location features. You can decline or revoke the permission at any time in your device settings and the app keeps working (with distance sorting and local weather disabled).</li>
-  <li><strong>Legitimate interests</strong> (Art. 6(1)(f)): crash reporting to keep the app stable, basic security of our systems, and reviewing reports, blocks and bans to keep users safe.</li>
+  <li><strong>Legitimate interests</strong> (Art. 6(1)(f)): crash reporting to keep the app stable, counting views to show what's trending, basic security of our systems, and reviewing reports, blocks and bans to keep users safe.</li>
   <li><strong>Legal obligation</strong> (Art. 6(1)(c)): handling reports and telling the people involved what we decided, as the EU Digital Services Act requires.</li>
 </ul>
 
@@ -105,13 +113,13 @@
 <div class="tablebox">
 <table>
   <tr><th>Service</th><th>Purpose</th><th>Data involved</th><th>Location</th></tr>
-  <tr><td>Clerk</td><td>Sign-up, sign-in, account security</td><td>Email, username, password, Google identity, avatar</td><td>USA*</td></tr>
-  <tr><td>Render</td><td>Hosts our backend and database</td><td>Your profile and the content you create</td><td>EU region hosting, US company*</td></tr>
+  <tr><td>Clerk</td><td>Sign-up, sign-in, account security</td><td>Email, username, password, Google or Apple identity, avatar</td><td>USA*</td></tr>
+  <tr><td>Render</td><td>Hosts our backend and database</td><td>Your profile, the content you create and view counts</td><td>EU region hosting, US company*</td></tr>
   <tr><td>Sentry</td><td>Crash reporting</td><td>Technical crash data only (no IP/email/IDs)</td><td>EU</td></tr>
   <tr><td>Cloudinary</td><td>Serves images in the app</td><td>Image delivery only</td><td>USA*</td></tr>
   <tr><td>Google Maps</td><td>Renders the map (Android only)</td><td>Standard map-tile requests</td><td>USA*</td></tr>
   <tr><td>Apple Maps</td><td>Renders the map (iOS only)</td><td>Standard map requests via iOS</td><td>USA*</td></tr>
-  <tr><td>Met Éireann &amp; Open-Meteo</td><td>Weather forecast</td><td>Approximate coordinates, not linked to you</td><td>Ireland / EU</td></tr>
+  <tr><td>Met Éireann &amp; Open-Meteo</td><td>Weather forecast</td><td>Your county, or approximate coordinates (about 10 km), not linked to you</td><td>Ireland / EU</td></tr>
   <tr><td>Expo (EAS)</td><td>App builds and over-the-air updates</td><td>Standard update requests</td><td>USA*</td></tr>
   <tr><td>Discord</td><td>Alerts us when a new report arrives</td><td>The report's reason and type only (no names, details or content)</td><td>USA*</td></tr>
 </table>
@@ -126,6 +134,7 @@
 <ul>
   <li><strong>Account and content:</strong> kept while your account is active. When you delete your account, your profile and content are deleted from our backend.</li>
   <li><strong>Moderation records:</strong> if your account or content was subject to a moderation action (content removed or account banned), we keep a minimal record of that action for <strong>12 months</strong> after the action, even if you delete your account. This stops people deleting an account to wipe the record and signing up again. The record doesn't include a copy of the content. Reports about you that led to no action are deleted when you delete your account. Reports you made are kept with your name removed.</li>
+  <li><strong>Views:</strong> deleted automatically after 60 days.</li>
   <li><strong>Crash data:</strong> retained by Sentry for its standard rolling window (approximately 90 days), then deleted automatically.</li>
 </ul>
 
