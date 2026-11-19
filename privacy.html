@@ -6,10 +6,10 @@
 <title>Privacy Policy — Trebune</title>
 <meta name="description" content="Privacy Policy for the Trebune app.">
 <link rel="icon" type="image/png" href="logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
+  /* Self-hosted fonts: no requests to other servers. */
+  @font-face{font-family:'Space Grotesk';src:url('assets/fonts/space-grotesk-latin.woff2') format('woff2');font-weight:300 700;font-display:swap;}
+  @font-face{font-family:'Inter';src:url('assets/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-display:swap;}
   :root{
     --bg:#1C1C1C; --surface:#242424; --surface-high:#2E2E2E;
     --text:#EDEDED; --muted:#A8A8A8;
@@ -48,11 +48,12 @@
   <img class="logo" src="logo.png" alt="Trebune logo">
   <div class="brand"><a href="index.html">Trebune</a></div>
   <h1>Privacy Policy</h1>
-  <p class="effective">Effective date: 18 November 2026</p>
+  <p class="effective">Effective date: 19 November 2026</p>
 </header>
 
 <div class="callout">
-  <p><strong>What changed on 18 November 2026:</strong> Added how Sign in with Apple works, how we count views to show what's trending, and more detail on the weather lookup. Removed a mention of share messages, which the app doesn't have. Nothing new is collected.</p>
+  <p><strong>What changed on 19 November 2026:</strong> Listed MongoDB Atlas, which stores our database, as its own service provider (it was described under Render). This page no longer loads fonts from Google. Nothing new is collected.</p>
+  <p><strong>18 November 2026:</strong> Added how Sign in with Apple works, how we count views to show what's trending, and more detail on the weather lookup. Removed a mention of share messages, which the app doesn't have. Nothing new is collected.</p>
 </div>
 
 <p>Trebune is an app for discovering Irish skateparks, street spots, shops and events, and for planning skate sessions with friends. This policy explains what personal data the app collects, why, and what your rights are. It is written to be read by humans — if anything is unclear, email us.</p>
@@ -114,7 +115,8 @@
 <table>
   <tr><th>Service</th><th>Purpose</th><th>Data involved</th><th>Location</th></tr>
   <tr><td>Clerk</td><td>Sign-up, sign-in, account security</td><td>Email, username, password, Google or Apple identity, avatar</td><td>USA*</td></tr>
-  <tr><td>Render</td><td>Hosts our backend and database</td><td>Your profile, the content you create and view counts</td><td>EU region hosting, US company*</td></tr>
+  <tr><td>Render</td><td>Runs our backend server</td><td>Your profile, the content you create and view counts, while the server handles them</td><td>EU region hosting, US company*</td></tr>
+  <tr><td>MongoDB Atlas</td><td>Stores our database</td><td>Your profile, the content you create and view counts</td><td>EU region hosting, US company*</td></tr>
   <tr><td>Sentry</td><td>Crash reporting</td><td>Technical crash data only (no IP/email/IDs)</td><td>EU</td></tr>
   <tr><td>Cloudinary</td><td>Serves images in the app</td><td>Image delivery only</td><td>USA*</td></tr>
   <tr><td>Google Maps</td><td>Renders the map (Android only)</td><td>Standard map-tile requests</td><td>USA*</td></tr>
