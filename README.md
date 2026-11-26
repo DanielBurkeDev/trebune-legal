@@ -22,7 +22,7 @@ Each phone frame shows a placeholder until its screenshot exists. Add a PNG (129
 | `assets/screens/skating.png` | 03 See who's skating |
 | `assets/screens/tricks.png` | 04 Build your trick lists |
 
-Use a test account. Screenshots must not show real people's names or photos.
+Use a test account. Screenshots must not show real people's names or photos (including in park photos). The current shots use these fake users, so keep to them in new ones: you are **Eoin** (blue E avatar), and your friends are **Aoife Murphy** (pink A), **Cian Byrne** (teal C) and **Niamh Kelly** (purple N).
 
 ## When the app is in the stores
 
